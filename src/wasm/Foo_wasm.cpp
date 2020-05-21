@@ -9,6 +9,7 @@ EMSCRIPTEN_BINDINGS(c) {
     class_<Foo>("Foo")
         .constructor()
         .function("printString", &Foo::printString)
-        .function("printNums", &Foo::printNums);
+        .function("printNums", &Foo::printNums)
+        .function("parseJSON", &Foo::parseJSON);
 }
 
