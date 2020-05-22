@@ -3,7 +3,7 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(wasm, m) {
+PYBIND11_MODULE(mymodule, m) {
     py::class_<Foo>(m, "Foo")
         .def(py::init<>())
         .def("printString", &Foo::printString)
